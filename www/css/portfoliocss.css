@@ -13,11 +13,11 @@
 	border-color: white;
 	padding: 5px;
 	
-	width: 450px;
+	width: 200px;
 	height: 750x;
 	
 	position: absolute; 
-	left: 50%;
+	left: 10%;
 	top: 50%;
 	transform: translate(-50%, -50%)
 }
