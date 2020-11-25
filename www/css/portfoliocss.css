@@ -55,18 +55,21 @@
  }
  
  .image
-  {vertical-align:middle;
-   max-height: 500px; }
+  {
+	  vertical-align:middle;
+      max-height: 500px; 
+   
+  }
    
    
-   .slideshowContainer
+ .slideshowContainer
    {
       max-width:1000px;
 	  position: relative;
 	  margin:auto;
    }
    
-   .prev .next
+ .prev .next
    {
      cursor: pointer;
 	 position: absolute;
