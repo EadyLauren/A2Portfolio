@@ -57,7 +57,7 @@
  .image
   {
 	  vertical-align:middle;
-      max-height: 500px; 
+      max-height: 1000px; 
    
   }
    
@@ -69,7 +69,7 @@
 	  margin:auto;
    }
    
- .prev .next
+ .prev, .next
    {
      cursor: pointer;
 	 position: absolute;
@@ -77,7 +77,7 @@
 	 width: auto;
 	 padding: 16px;
 	 margin-top: -22px;
-	 color: red;
+	 color: white;
 	 font-weight: bold;
 	 font-size: 18px;
 	 border-radius: 0 3px  3px 0;
@@ -119,22 +119,6 @@
 		text-align: center;
 	}
 	
-	.dot
-	{
-		height:15px;
-		width:15px;
-		margin: 0 2px;
-		background-color: #bbb;
-		border-radius: 50%;
-		display: inline-block;
-		transition: background-color 0.6s ease;
-	
-	}
-	
-	.active
-	{
-	background-color: #717171
-	}
 	
 	.fade
 	{

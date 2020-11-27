@@ -35,7 +35,7 @@
  
  <div class="Slideshow Fade"> 
    
-   <div class="numberText">1 /3 </div>
+   <div class="numberText">2 /3 </div>
    <img class="image" src="images/Character2.png" width="100%">
    <div class="text"> png </div>
   </div>
@@ -44,7 +44,7 @@
 
  <div class="Slideshow Fade"> 
    
-   <div class="numberText">1 /3 </div>
+   <div class="numberText">3 /3 </div>
    <img class="image" src="images/Character3.png" width="100%">
    <div class="text"> png </div>
   </div>
@@ -54,28 +54,32 @@
 
 
 
-<a class="prev" onclick="">&#10094;</a>
-<a class="next" onclick="">&#10095;</a>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 
 <br>
 
-<div style="text-align;center">
-    <span class="dot" onclick=""> </span>
-    <span class="dot" onclick=""> </span>
-	<span class="dot" onclick=""> </span>
-</div>
+
 <script>
 	    
 		var slideIndex = 1;
 		showSlides(slideIndex);
 		
+		function plusSlides(n) 
+	{
+	   showSlides(slideIndex += n);
+	}
+	    
+		function currentSlide(n)
+	{
+	   showSlides(slideIndex = n);
+	}
 		function showSlides(n)
 	   {
 			var i;
-			var slides = document.getElementsByClassName("Slideshow");
-			var dots = document.getElementsByClassName("dot");			
+			var slides = document.getElementsByClassName("Slideshow");			
 			
 			if (n > slides.length)
 			{
@@ -91,13 +95,9 @@
 			{
 				slides[i].style.display = "none";				
 			}
-			for (i = 0; i < dots.length; i++)
-			{
-				dots[i].className = dots[i].className.replace(" active","");
-			}	
+				
 			 
 			 slides[slideIndex-1].style.display = "block";
-		     dots[slideIndex-1].className += " active";	
 	    }		
       </script> 
  </body>
