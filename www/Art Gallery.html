@@ -15,6 +15,84 @@
 	<div class="header" ; style= "color: white; background-color: #fc3841";>
    <h1 style= "font-size: 50px"> Lauren Eady Portfolio </h1> 
     </div>
-<p> this is a test part 2 </p>
+<div class="slideshowContainer">
+
+
+ <div class="Slideshow Fade"> 
+   
+   <div class="numberText">1 /3 </div>
+   <img class="image" src="images/Art1.png" width="100%">
+   <div class="text">  </div>
+  </div>
+
+ 
+ 
+ <div class="Slideshow Fade"> 
+   
+   <div class="numberText">2 /3 </div>
+   <img class="image" src="images/Art2.png" width="100%">
+   <div class="text"> png </div>
+  </div>
+
+
+
+ <div class="Slideshow Fade"> 
+   
+   <div class="numberText">3 /3 </div>
+   <img class="image" src="images/Art3.png" width="100%">
+   <div class="text"> png </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+
+<script>
+	    
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) 
+	{
+	   showSlides(slideIndex += n);
+	}
+	    
+		function currentSlide(n)
+	{
+	   showSlides(slideIndex = n);
+	}
+		function showSlides(n)
+	   {
+			var i;
+			var slides = document.getElementsByClassName("Slideshow");			
+			
+			if (n > slides.length)
+			{
+				slideIndex = 1;
+			}
+			
+			if (n < 1 )
+			{ 
+				slideIndex = slides.length;
+			}
+							
+			for (i = 0; i < slides.length; i++)
+			{
+				slides[i].style.display = "none";				
+			}
+				
+			 
+			 slides[slideIndex-1].style.display = "block";
+	    }		
+      </script> 
  </body>
 </html>

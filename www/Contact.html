@@ -2,7 +2,29 @@
  <head>
  <link rel = "stylesheet" type = "text/css" href="css/portfoliocss.css">
    <title> </title>
+   
+   <script>
+   
+      function start () 
+	{
+	  var clip = new Audio()
+	  clip.src = "kirby.mp3";
+	  
+	  clip.addEventListener("canplaythrough", function()
+	   {
+	    alert("Enjoy some Kirby Music");
+		clip.play();
+		});
+		
+		clip.addEvenListener("ended", function()
+		 {
+		   alert("I hope you enjoyed, now back to the site");
+		 });
+	}
+   </script>
+   
  </head>
+ 
  
  <body style= "background-color:#0f0f38;">
  
@@ -15,6 +37,16 @@
    <h1 style= "font-size: 50px"> Lauren Eady Portfolio </h1> 
     </div>
  
-<p> this is a test part 3</p>
+<input href="#" type="submit" onclick="start();"></input>
+
+<p>
+
+ <div style= "color: white; font-size: 25">
+   Want to get into contact? 
+   <P>
+   Here are some of my media platforms to access more of my work or get in contact with. 
+   
+   </div>
+   
  </body>
 </html>
