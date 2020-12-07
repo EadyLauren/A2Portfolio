@@ -16,7 +16,7 @@
 	width: 700px;
 	height: 250x;
 	
-	position: absolute; 
+	position: sticky; 
 	left: 30%;
 	top: 75%;
 	transform: translate(-60%, -50%)
