@@ -6,21 +6,21 @@
 }
 
 
-.maintext
+.text1
 
 {
-	border-style: none;
+	border-style: bold;
 	border-color: none;
 	border-width: 0px;
-	padding: 20px;
+	padding: 30px;
 	
 	
-	width: 700px;
+	width: 500px;
 	height: 250x;
 	
 	position: absolute; 
-	left: 30%;
-	top: 70%;
+	left: 25%;
+	top: 50%;
 	transform: translate(-60%, -50%)
 }
 	
@@ -30,7 +30,6 @@
 		left: 1%;
 		bottom:0%;
 		width: 100%;
-		background-color: #0f0f38;
 		text-align: left;
 	
 		
@@ -53,6 +52,8 @@
 	border-style: solid;
 	border-color: #0f0f38;
 	border-width: 1px;
+	padding: 5px;
+    transform: translate (-30%, -30%);
 	
 	
 	width: 600px;
