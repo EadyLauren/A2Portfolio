@@ -6,13 +6,23 @@
 }
 
 
+#Photo 
+{
+	width: 504px;
+	height: 576px;
+	
+	position: absolute;
+	top: 400px;
+	left: 800px;
+	right: 50px;
+}
+
+
 .text1
 
 {
-
+   
 	width: 500px;
-	height: 250x;
-	
 	position: absolute; 
 	left: 25%;
 	top: 60%;
@@ -24,16 +34,16 @@
 {
 	
 	width: 500px;
-	height: 250x;
 	
 	position: absolute; 
 	left: 30%;
 	top: 110%;
 	transform: translate(-50%, -30%)
 }
-	
-	.footer
-	{
+
+
+.footer
+{
 		position: fixed;
 		left: 1%;
 		bottom:0%;
@@ -41,7 +51,7 @@
 		text-align: left;
 	
 		
-	}
+}
 .square
 {
 	height: 50px;
@@ -60,10 +70,7 @@
 	border-style: solid;
 	border-color: #0f0f38;
 	border-width: 1px;
-	padding: 5px;
-    transform: translate (-30%, -30%);
-	
-	
+	padding: 15px;
 	width: 600px;
 
 }
