@@ -1,0 +1,135 @@
+<html>
+ <head>
+   <link rel = "stylesheet" type = "text/css" href="css/portfoliocss.css">
+   <link rel = "stylesheet" type = "text/css" href="css/menubarcss.css">
+  <title>Dystinny Slideshow</title>
+
+ </head>
+ <body style= "background: url(file:///C:/Users/laure/OneDrive/Documents/University/cygsdk/home/laure/A2Portfolio/www/images/Back.png);
+  background-size: 100%">
+  
+  
+       <div class="menu-bar">
+ 
+<ul>
+<li><a href="index.html"> Home </a> </li>
+<li> <a href="Character Design.html">Character Design </a> </li>
+<li> <a href="Art Gallery.html">Art Gallery </a> </li>
+<li class="active"> <a href="Dystinny.html">Dystinny </a> </li>
+<li> <a href="Contact.html">Contact </a> </li>
+	   
+</div>
+
+<br>
+
+ <div class="slideshowContainer">
+      
+	  <div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+	   
+	   
+	   <div class="Slideshow Fade"> 
+        <img class="center" src="images/Tinny.png" width="100%">
+        <div class="text" style="color:white"> Early Tinny Drawing  </div>
+      </div>
+	  
+
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/BoltsAnd355.png" width="100%">
+        <div class="text" style="color:white"> 355 (Left) and Bolts (Right)  </div>
+      </div>
+	  
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/GeffAndFen.png" width="100%">
+        <div class="text" style="color:white"> Fen (Left) and Geff (Right)  </div>
+      </div>
+	  
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/JustSheeb.png" width="100%">
+        <div class="text" style="color:white"> Sheeb   </div>
+      </div>
+	   
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/UPDATETinny.png" width="100%">
+        <div class="text" style="color:white">Most Recent Tinny Design </div>
+      </div>
+	  
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/UPDATEGeff.png" width="100%">
+        <div class="text" style="color:white">Most Recent Geff (1) </div>
+      </div>
+	  
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/UPDATEGeff2.png" width="100%">
+        <div class="text" style="color:white">Most Recent Geff (2) </div>
+      </div>
+	  
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/UPDATETinnyDad.png" width="100%">
+        <div class="text" style="color:white">Tinny's Father Design </div>
+      </div>
+	  
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/Expressions.png" width="100%">
+        <div class="text" style="color:white"> Early Sprite Designs (Tinny) </div>
+      </div>
+	  
+	  <div class="Slideshow Fade"> 
+        <img class="center" src="images/Working Tinny.png" width="100%">
+        <div class="text" style="color:white"> Tinny in her Office (early) </div>
+      </div>
+	  
+    </div>
+
+	 <br>
+
+<script>
+	    
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) 
+	{
+	   showSlides(slideIndex += n);
+	}
+	    
+		function currentSlide(n)
+	{
+	   showSlides(slideIndex = n);
+	}
+		function showSlides(n)
+	   {
+			var i;
+			var slides = document.getElementsByClassName("Slideshow");			
+			
+			if (n > slides.length)
+			{
+				slideIndex = 1;
+			}
+			
+			if (n < 1 )
+			{ 
+				slideIndex = slides.length;
+			}
+							
+			for (i = 0; i < slides.length; i++)
+			{
+				slides[i].style.display = "none";				
+			}
+				
+			 
+			 slides[slideIndex-1].style.display = "block";
+	    }		
+      </script> 
+	  
+	  <div class="footer" style="background: white; height: 20px":>
+    <div class="footer" style="color:white; background-color: #0f0f39; height: 17px";>
+	  Lauren Eady©     
+	  
+
+ </body>
+</html>

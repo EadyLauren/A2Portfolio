@@ -1,3 +1,52 @@
+
+/*main css*/
+
+.layoutbox
+{
+	width: 1300px;
+	border: 5px solid none;
+	margin: 20px auto;
+	
+}
+
+.titlebox
+{
+	width: 700px;
+	height:100px;
+	margin: 3px;
+	background-color: #f24c59;
+	position: relative;
+	margin: 10px;
+	color: white;
+	text-align: center;
+	font-size: 60px;
+}
+
+.subtitle_box
+{
+	width: 500px;
+	height:75px;
+	margin: 5px;
+	background-color: #f24c59;
+	position: relative;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.textbox
+{
+	margin: 5px;
+	background-color: #f24c59;
+	position: relative;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	border: 5px solid #f24c59;
+}
+
+
+
 #Image
 {
 	float: right; 
@@ -10,7 +59,6 @@
 {
 	width: 504px;
 	height: 576px;
-	
 	position: absolute;
 	top: 400px;
 	left: 800px;
@@ -18,37 +66,13 @@
 }
 
 
-.center {
+.center 
+{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-
-.text1
-
-{
-   
-	width: 500px;
-	position: absolute; 
-	left: 25%;
-	top: 60%;
-	transform: translate(-60%, -50%)
-}
-
-.text2
-
-{
-	
-	width: 500px;
-	
-	position: absolute; 
-	left: 30%;
-	top: 110%;
-	transform: translate(-50%, -30%)
-}
-
-
 
 .footer
 {
@@ -65,10 +89,7 @@
 	height: 50px;
 	width: 50px;
 	background-color: #fc3841;
-	
 	float: left;
-	
-
 }
 
 
