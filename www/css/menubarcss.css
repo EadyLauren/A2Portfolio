@@ -31,10 +31,13 @@
 {
 	text-decoration: none;
 	color: white;
+	font-family: helvetica;
+	
 }
 
 .active, .menu-bar ul li:hover
 {
 	 background : #eb838c;
 	 border-radius: 3px;
+	 text-decoration: underline;
 }
